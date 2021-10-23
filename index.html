@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./App.js" type="module"></script>
+    <link rel="stylesheet" href="indexDesktop.css">
+</head>
+<body>
+
+    <form action="#" id="myForm">
+    <table id="signup-table">
+        <tbody>
+            <tr>
+                <td> <p id="signup-text"> Sign Up </p> </td>
+            </tr>
+            <tr>
+                <td><input placeholder="Full Name" autocapitalize="words" autofocus type="text"  name="fullname"></td>
+            </tr>
+            <tr>
+                <td><input placeholder="Email" autocomplete="on" type="email"  name="email"></td>
+            </tr>
+            <tr>
+                <td><input placeholder="Password" type="password"  name="password" ></td>
+            </tr>
+            <tr>
+                <td><Button type="submit" id="signup-submit">CREATE ACCOUNT</Button></td>
+            </tr>
+            <tr>
+                <td id="signin-link"> 
+                    <span class="blury-text">Have an account ?</span> <span id="link"> Sign In</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </form>
+    <div id="displayMessage">
+        <span id="error-text"></span>       
+    </div>
+</body>
+</html>

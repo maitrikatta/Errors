@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+input {
+  outline: none;
+}
+#signup-text {
+  text-align: center;
+  font-size: 24px;
+}
+#signup-table {
+  border: 1px solid black;
+  min-width: 400px;
+  min-height: 300px;
+  margin: auto; /* keeps table always center */
+  margin-top: 20vh;
+  padding: 3% 0%;
+  box-sizing: content-box;
+}
+#signup-table > tbody > tr > td > input {
+  width: 70%;
+  display: block;
+  height: 30px;
+  margin: auto;
+}
+#signup-submit {
+  margin: auto;
+  background-color: green;
+  width: 70%;
+  display: block;
+  border: none;
+  height: 35px;
+  color: white;
+  box-shadow: 1px 1px 2px black;
+  opacity: 0.9;
+}
+#signup-submit:hover {
+  background-color: green;
+  opacity: 0.5;
+  box-shadow: none;
+}
+#signin-link {
+  text-align: right;
+  font-size: small;
+  padding-right: 10%;
+}
+.blury-text {
+  opacity: 0.5;
+}
+#link:hover {
+  color: green;
+  text-decoration: underline;
+  cursor: pointer;
+  user-select: none;
+}
+
+#displayMessage {
+  visibility: hidden;
+}
+.makegreen {
+  opacity: 0.7;
+  background-color: green;
+}
+.animateErrors {
+  display: flex;
+  max-width: 400px;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+  height: 50px;
+  margin: auto;
+  margin-top: 30px;
+  border: 1px solid white;
+  background-color: rgba(253, 59, 59, 0.822);
+  color: white;
+  box-sizing: content-box;
+  font-size: 18px;
+  animation-name: errorBox;
+  animation-duration: 1s;
+}
+@keyframes errorBox {
+  from {
+    width: 5%;
+  }
+  to {
+    width: 100%;
+  }
+}
